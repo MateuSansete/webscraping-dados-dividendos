@@ -55,7 +55,7 @@ try:
             df_proventos['VALOR'] = (
                 df_proventos['VALOR']
                 .astype(str)
-                .str.replace('R\$', '', regex=False) 
+                .str.replace(r'R\$', '', regex=False) 
                 .str.strip() 
             )
 
